@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body, html {
+  height: 100%;
+}
+
+body {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #baaba1;
+  padding-bottom: 10px;
+}
+
+.block {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.game {
+  height: 1250px;
+  width: 1250px;
+  margin: 0px auto;
+  font-size: 0px;
+  background-color: black;
+}
+
+.game-container {
+  border: 2px solid #382e28;
+  height: 400px;
+  width: 700px;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: 0px auto;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+.wall {
+  background-color: #7a6b61;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 5px 5px black);
+  z-index: 3;
+}
+
+.room {
+  background-color: #262626;
+}
+
+.passage {
+  background-color: #1c1c1c;
+}
+
+.player {
+  background-color: blue;
+}
+
+.enemy {
+  background-color: red;
+}
+
+.health {
+  background-color: green;
+}
+
+.boss, .boss-center {
+  background-color: maroon;
+}
+
+.weapon {
+  background-color: yellow;
+}
+
+.player-stats {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 55px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.player-stats .icon {
+  vertical-align: top;
+  margin-left: 15px;
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  margin-right: 2px;
+}
+
+.wrap-player-stats {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0px auto;
+  display: table;
+  height: 100%;
+  min-width: 820px;
+}
+
+.icons-credit {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #262626;
+}
+.icons-credit:focus {
+  color: #585858;
+}
+.icons-credit:hover {
+  text-decoration: none;
+  color: #262626;
+}
+
+.stats-label {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #e2d7ce;
+  margin-top: 17px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 15px;
+}
+
+.xp-label {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 2px;
+}
+
+.bar {
+  height: 19px;
+  width: 104px;
+  border-radius: 2px;
+  border: 1px solid #e2d7ce;
+  padding: 1px;
+  position: relative;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+}
+
+.inner-bar {
+  height: 100%;
+  opacity: 50%;
+}
+
+.bar-label {
+  color: #e2d7ce;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  font-size: 13px;
+}
+
+.health-bar {
+  background-color: red;
+}
+
+.xp-bar {
+  background-color: #a1a3ba;
+}
+
+.modal-content {
+  background-color: rgba(214, 202, 194, 0.95);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 400px;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+.modal-header, .modal-footer, .modal-body {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.modal-footer {
+  text-align: center;
+}
+.modal-footer .center-button {
+  margin-top: 0px;
+}
+.modal-footer .btn + .btn {
+  margin: 3px;
+}
+
+.modal-text {
+  text-align: center;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.btn {
+  font-family: 'Raleway', sans-serif;
+  background-color: #706943;
+  color: #f9f5db;
+  font-size: 16px;
+  padding: 0;
+  border: 0;
+  min-width: 100px;
+  margin: 3px;
+  height: 35px;
+}
+.btn:hover, .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.active.focus, .btn.active:focus, .btn:active.focus, .btn:active:focus, .btn:active:hover {
+  background-color: #918858;
+  color: #f9f5db;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+.new {
+  background-color: #507a43;
+  color: #f9f5db;
+}
+.new:hover, .new:active, .new:focus, .new:active:focus, .new.active:focus, .new.active.focus, .new.active:focus, .new:active.focus, .new:active:focus, .new:active:hover {
+  background-color: #5c8e4d;
+  color: #f9f5db;
+}
+
+.not-visited {
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+}
+
+.game-play-icon {
+  height: 27px;
+  width: 27px;
+}
+
+.boss-icon {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: -22px;
+  left: -22px;
+  z-index: 2;
+}
+
+.game-description {
+  display: table;
+  margin: 0px auto;
+  font-family: 'Raleway', sans-serif;
+}
+.game-description h1 {
+  margin-bottom: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.game-description p {
+  font-size: 18px;
+  text-align: center;
+}
