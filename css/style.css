@@ -150,7 +150,7 @@ body {
   position: relative;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .inner-bar {
